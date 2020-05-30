@@ -1,16 +1,6 @@
-#title {
-  background-color: #ff4c68;
-}
+/* html elements */
 body {
   font-family: "Montserrat-Black", sans-serif;
-}
-.container-fluid {
-  padding: 3% 15% 7%;
-}
-.navbar-brand {
-  font-size: 2.5rem;
-  font-family: "Ubuntu";
-  font-weight: bold;
 }
 h1 {
   font-family: "Montserrat-Black", sans-serif;
@@ -19,6 +9,32 @@ h1 {
   color: white;
   line-height: 1.5;
 }
+h2 {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+  font-family: "Montserrat-Black", sans-serif;
+}
+h3 {
+  font-family: "Monstserrat-Black", sans-serif;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+#title {
+  background-color: #ff4c68;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+.navbar-brand {
+  font-size: 2.5rem;
+  font-family: "Ubuntu";
+  font-weight: bold;
+}
+
 .navbar {
   padding: 0 0 4.5rem;
 }
@@ -40,45 +56,34 @@ h1 {
 }
 
 /* features */
-#features {
+.features {
   text-align: center;
-  padding: 80px 40px;
+  padding: 10% 8%;
   background-color: white;
   position: relative;
 }
-#features i {
+.icon {
   font-size: 4rem;
   color: #ef8172;
 }
-#features i:hover {
+.icon:hover {
   color: #ff4c68;
 }
-h2 {
-  font-size: 3rem;
-  line-height: 1.5;
+
+.features p {
+  font-family: "Monstserrat-Black", sans-serif;
   font-weight: 900;
-  font-family: "Montserrat-Black", sans-serif;
-}
-h3 {
-  font-family: "Monstserrat-Black", sans-serif;
-  font-weight: bold;
-  font-size: 1.5em;
-  margin: 20px 0;
-}
-#features p {
-  font-family: "Monstserrat-Black", sans-serif;
-  font-weight: bold;
   color: #8f8f8f;
 }
 .feature-box {
-  padding: 0 50px;
+  padding: 0 4%;
 }
 /* testimonial */
 #testimonials {
   background-color: #ef8172;
   text-align: center;
   color: white;
-  margin-top: 10%;
+  padding-top: 10%;
 }
 .carousel-item {
   padding: 3% 15%;
@@ -104,4 +109,38 @@ h3 {
 }
 .pricing-col {
   padding: 3% 2%;
+}
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .title-img {
+    transform: rotate(0deg);
+    position: static;
+  }
+}
+/* call to action */
+#cta {
+  background-color: #ff4c68;
+  text-align: center;
+  padding-top: 60px;
+}
+/* footer */
+#footer {
+  background-color: white;
+  text-align: center;
+  padding: 10% 8%;
+}
+#footer p {
+  font-family: "Monstserrat-Black", sans-serif;
+  font-weight: 900;
+  color: #8f8f8f;
+  margin: 10% 0;
+}
+.footer-container {
+  text-align: center;
+  padding: 0 40%;
+}
+.icon-footer {
+  font-size: 1.5rem;
 }
