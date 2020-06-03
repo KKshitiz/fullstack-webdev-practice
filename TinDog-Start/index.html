@@ -18,6 +18,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- custom css -->
   <link rel="stylesheet" href="css/styles.css" />
   <!-- google fonts -->
@@ -65,7 +66,7 @@
             Download
           </button>
         </div>
-        <div class="col-lg-6">
+        <div data-aos="zoom-in-up" class="col-lg-6">
           <img class="title-img" src="images/iphone6.png" alt="iphone-mockup" />
         </div>
       </div>
@@ -75,7 +76,7 @@
   <!-- Features -->
 
   <section class="container-fluid features">
-    <div class="row">
+    <div class="row" data-aos="zoom-in">
       <div class="col-md-4 feature-box">
         <i class="icon fas fa-check-circle"></i>
 
@@ -146,7 +147,7 @@
     <h2>A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
 
-    <div class="row">
+    <div class="row" data-aos="zoom-out">
 
       <div class="pricing-col col-lg-4 col-md-6">
         <div class="card">
@@ -158,6 +159,8 @@
             <p>5 Matches Per Day</p>
             <p>10 Messages Per Day</p>
             <p>Unlimited App Usage</p>
+            <br>
+            <br>
             <button class="btn btn-outline-dark btn-block btn-lg" type="button">Sign Up</button>
           </div>
         </div>
@@ -173,6 +176,8 @@
             <p>Unlimited Matches</p>
             <p>Unlimited Messages</p>
             <p>Unlimited App Usage</p>
+            <br>
+            <br>
             <button class="btn btn-dark btn-block btn-lg" type="button">Sign Up</button>
           </div>
         </div>
@@ -206,7 +211,10 @@
 
   <section id="cta">
     <div class="cta-container container-fluid">
-      <h1>Find the True Love of Your Dog's Life Today.</h1>
+      <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="0" data-aos-offset="0">
+        <h1>Find the True Love of Your Dog's Life Today.</h1>
+      </div>
+
       <button type="button" class="btn btn-dark btn-lg download-button">
         <i class="fab fa-apple"></i> Download
       </button>
@@ -231,6 +239,10 @@
       <p>© Copyright 2018 TinDog</p>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

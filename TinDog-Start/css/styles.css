@@ -110,6 +110,9 @@ h3 {
 .pricing-col {
   padding: 3% 2%;
 }
+.card {
+  height: auto;
+}
 @media (max-width: 1028px) {
   #title {
     text-align: center;
