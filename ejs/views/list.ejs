@@ -1,14 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('header') -%>
+<div class="box" id="heading">
+    <h1><%= kindOfDay %></h1>
+</div>
+<div class="box">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <% for(var i=0;i<tasks.length;i++){ %>
+    <div class="item">
+        <input type="checkbox">
+        <p><%= tasks[i] %></p>
+    </div>
+    <% } %>
 
-<body>
-<h1>Today is <%= kindOfDay %></h1>
-</body>
+    <form class="item" action="/" method="post">
+        <input type="text" name="task" placeholder="New Item" autocomplete="off" autofocus>
+        <button type="submit" value="<%= kindOfDay %>" name="button">+</button>
+    </form>
 
-</html>
+</div>
+<%- include('footer') -%>
